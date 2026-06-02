@@ -9,17 +9,6 @@
       "description": "Run all pre-commit checks (lint, format, typecheck)"
     }
   },
-  "agent": {
-    "code-reviewer": {
-      "description": "Reviews code for best practices and potential issues.",
-      "prompt": "You are a senior software engineer responsible for reviewing your peer's code. Focus on security, performance and maintainability.",
-      "permission": {
-        "edit": "deny"
-      },
-      "temperature": 0.1,
-      "color": "secondary"
-    }
-  },
   "default_agent": "plan",
   "share": "disabled",
   "autoupdate": false,
