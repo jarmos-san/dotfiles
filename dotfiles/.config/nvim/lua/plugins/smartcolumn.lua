@@ -18,6 +18,7 @@ return {
       "gitignore",
       "gitrebase",
       "gosum",
+      "gomod",
       "help",
       "json",
       "jsonc",
