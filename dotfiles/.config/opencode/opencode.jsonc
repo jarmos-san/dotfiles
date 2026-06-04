@@ -12,7 +12,13 @@
   "default_agent": "plan",
   "share": "disabled",
   "autoupdate": false,
-  "formatter": false,
+  "formatter": {
+    "gofmt": { "disabled": true },
+    "golangci-lint": {
+      "command": ["golangci-lint", "fmt"],
+      "extensions": [".go"]
+    }
+  },
   "lsp": true,
   "permission": {
     "edit": "ask",
