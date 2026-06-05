@@ -3,38 +3,24 @@
   "instructions": [
     "AGENTS.md"
   ],
-  "command": {
-    "check": {
-      "template": "Run all pre-commit checks on the codebase (linting, formatting, typechecking). Fix any issues found.",
-      "description": "Run all pre-commit checks (lint, format, typecheck)"
-    }
-  },
   "default_agent": "plan",
   "share": "disabled",
   "autoupdate": false,
   "formatter": {
-    "gofmt": { "disabled": true },
+    "gofmt": {
+      "disabled": true
+    },
     "golangci-lint": {
-      "command": ["golangci-lint", "fmt"],
-      "extensions": [".go"]
+      "command": [
+        "golangci-lint",
+        "fmt"
+      ],
+      "extensions": [
+        ".go"
+      ]
     }
   },
   "lsp": true,
-  "permission": {
-    "edit": "ask",
-    "bash": {
-      "*": "ask",
-      "rm *": "deny",
-      "grep *": "allow",
-      "ls *": "allow", // Allow listing file/directory objects in the filesystem
-      "rg *": "allow", // Allow invoking "ripgrep"
-      "mkdir *": "allow", // Allow creating arbitrary directories
-      "which *": "allow"
-    },
-    "lsp": "allow",
-    "skill": "allow",
-    "todowrite": "allow"
-  },
   "watcher": {
     "ignore": [
       "node_modules/**",
@@ -44,5 +30,31 @@
   },
   "plugin": [
     "@franlol/opencode-md-table-formatter@0.0.6"
-  ]
+  ],
+  "agent": { // Configurations for the default builtin agents
+    "build": { // Configurations for the default "build" agent
+      "permission": {
+        "edit": "allow", // Allow editing for the "build" agent
+        "bash": { // Fine-tuned permissions for running Bash commands for the "build" command
+          "*": "ask", // Ask for executing arbitrary shell commands
+          "rm *": "ask", // Ask to execute the "rm" command
+          "grep *": "allow", // Allow executing the "grep" command
+          "ls *": "allow", // Allow listing file/directory objects in the filesystem
+          "rg *": "allow", // Allow invoking "ripgrep"
+          "mkdir *": "allow", // Allow creating arbitrary directories
+          "which *": "allow" // Allow executing the "which" command
+        }
+      }
+    },
+    "plan": { // Configurations for the default "plan" agent
+      "permission": {
+        "read": "allow" // Allow reading files and contents of folders by default
+      }
+    }
+  },
+  "permission": { // Default and global permissions for ALL agents
+    "bash": { // Global permissions for executing arbitrary Bash commands
+      "*": "deny" // Disable executing arbitrary shell commands by agents
+    }
+  }
 }
