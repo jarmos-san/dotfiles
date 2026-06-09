@@ -1,0 +1,9 @@
+{
+  "trustedtaps": [
+    "eth-p/software",
+    "go-task/tap",
+    "hashicorp/tap",
+    "incu6us/tap",
+    "xo/xo"
+  ]
+}
