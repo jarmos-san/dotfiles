@@ -4,6 +4,7 @@
     "go-task/tap",
     "hashicorp/tap",
     "incu6us/tap",
-    "xo/xo"
+    "xo/xo",
+    "terraform-linters/tap"
   ]
 }
