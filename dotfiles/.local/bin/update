@@ -35,7 +35,6 @@ import time
 import typing
 
 
-
 class LogFormatter(logging.Formatter):
     """A log formatter which adds ANSI colours and aligns the level tag.
 
@@ -297,7 +296,13 @@ def run_homebrew_updates(logger: logging.Logger) -> None:
     """
     logger.info("Running Homebrew updates")
     run(
-        "brew update && " + "brew upgrade && " + "brew autoremove && " + "brew cleanup",
+        "brew update"
+        + " && "
+        + "brew upgrade --yes"
+        + " && "
+        + "brew autoremove"
+        + " && "
+        + "brew cleanup",
         shell=True,
         logger=logger,
     )
