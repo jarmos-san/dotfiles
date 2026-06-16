@@ -28,6 +28,7 @@ return {
         "%.ansible",
         "%.tfstate",
         "%.astro",
+        "%.tflint.d",
       },
     },
     pickers = {
