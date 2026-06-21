@@ -42,7 +42,12 @@
           "ls *": "allow", // Allow listing file/directory objects in the filesystem
           "rg *": "allow", // Allow invoking "ripgrep"
           "mkdir *": "allow", // Allow creating arbitrary directories
-          "which *": "allow" // Allow executing the "which" command
+          "which *": "allow", // Allow executing the "which" command
+          "echo *": "allow", // Allow print messages to STDOUT
+          "go test *": "allow", // Allow running Go test suite
+          "go build *": "allow", // Allow building the executable Go binary
+          "golangci-lint *": "allow", // Allow running various Go linters
+          "task lint *": "allow" // Allow running linting commands where possible
         }
       }
     },
