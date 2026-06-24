@@ -47,7 +47,9 @@
           "go test *": "allow", // Allow running Go test suite
           "go build *": "allow", // Allow building the executable Go binary
           "golangci-lint *": "allow", // Allow running various Go linters
-          "task lint *": "allow" // Allow running linting commands where possible
+          "task lint *": "allow", // Allow running linting commands where possible
+          "npm install *": "deny", // Disallow install Node.js packages
+          "pnpm typecheck *": "allow" // Allow running typechecks for Node.js packages
         }
       }
     },
