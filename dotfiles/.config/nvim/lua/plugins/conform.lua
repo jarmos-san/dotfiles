@@ -5,18 +5,11 @@ return {
   event = { "LspAttach", "BufReadPost", "BufNewFile" },
   opts = {
     formatters_by_ft = {
-      html = { "prettier" },
-      javascript = { "prettier" },
       go = { "goimports-reviser", "golines", "gofmt" },
       hcl = { "hclfmt" },
-      markdown = { "prettier" },
       lua = { "stylua" },
-      scss = { "prettier" },
       sh = { "shfmt" },
       python = { "ruff_organize_imports", "ruff_format" },
-      typescript = { "prettier" },
-      vue = { "prettier" },
-      yaml = { "prettier" },
     },
     format_on_save = function(_)
       return {
@@ -30,11 +23,6 @@ return {
 
     -- Setup "conform.nvim" to work
     conform.setup(opts)
-
-    -- Customise the default "prettier" command to format Markdown files as well
-    conform.formatters.prettier = {
-      prepend_args = { "--prose-wrap", "always" },
-    }
 
     -- Add proper indents to the formatted Shell files
     conform.formatters.shfmt = {
