@@ -33,6 +33,9 @@ return {
     ".git",
   },
   settings = {
+    pyright = {
+      disableOrganizeImports = true,
+    },
     python = {
       analysis = {
         autoSearchPaths = true,
@@ -44,22 +47,7 @@ return {
       },
     },
   },
-  on_attach = function(client, bufnr)
-    -- Create a user command to organise the import statements in a file
-    vim.api.nvim_buf_create_user_command(bufnr, "LspPyrightOrganizeImports", function()
-      local params = {
-        command = "pyright.organizeImports",
-        arguments = { vim.uri_from_bufnr(bufnr) },
-      }
-
-      -- Using client.request() directly because "pyright.organizeimports" is private
-      -- (not advertised via capabilities), which client:exec_cmd() refuses to call.
-      ---@diagnostic disable-next-line: param-type-mismatch
-      client.request("workspace/executeCommand", params, nil, bufnr)
-    end, {
-      desc = "Organize Python Imports",
-    })
-
+  on_attach = function(_, bufnr)
     -- Create a user command to change/update the Python interpreter path
     vim.api.nvim_buf_create_user_command(
       bufnr,

@@ -7,7 +7,6 @@ return {
     require("lint").linters_by_ft = {
       lua = { "selene" },
       sh = { "shellcheck" },
-      python = { "ruff", "mypy" },
       ["yaml.ansible"] = { "ansible-lint", "yamllint" },
       yaml = { "yamllint" },
     }
