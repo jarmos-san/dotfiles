@@ -9,7 +9,6 @@ return {
       hcl = { "hclfmt" },
       lua = { "stylua" },
       sh = { "shfmt" },
-      python = { "ruff_organize_imports", "ruff_format" },
     },
     format_on_save = function(_)
       return {
