@@ -40,5 +40,5 @@ return {
     "markdown",
   },
   workspace_required = true,
-  root_markers = { ".oxfmtrc.json", "oxfmtrc.jsonc", "oxfmt.config.ts", "package.json", ".git" },
+  root_markers = { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts", "package.json", ".git" },
 }

@@ -13,6 +13,9 @@ return {
   cmd = { "vue-language-server", "--stdio" },
   filetypes = { "vue" },
   root_markers = { "package.json" },
+  on_attach = function(client, _)
+    client.server_capabilities.documentFormattingProvider = false
+  end,
   on_init = function(client)
     local retries = 0
 
