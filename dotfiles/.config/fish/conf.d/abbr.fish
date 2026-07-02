@@ -30,6 +30,7 @@ abbr --add dps "docker ps --format 'table {{ .ID }}\t{{ .Names }}\t{{ .Ports }}'
 abbr --add dims "docker images"
 abbr --add dimc "docker image prune --force"
 abbr --add drmi "docker image rm"
+abbr --add dcd "docker compose down --remove-orphans --volumes"
 
 # Terraform abbreviations
 abbr --add tfinit "terraform init"
