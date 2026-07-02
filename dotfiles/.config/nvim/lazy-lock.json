@@ -1,8 +1,8 @@
 {
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
-  "devicons": { "branch": "master", "commit": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c" },
-  "gitsigns.nvim": { "branch": "main", "commit": "2038c666bd9d8a0b7349a0b6ee00dc83104b9ecf" },
+  "devicons": { "branch": "master", "commit": "dad71387de386a946b123079d0e53f23028f3abd" },
+  "gitsigns.nvim": { "branch": "main", "commit": "eb60cc7b94c46005237fd34170d76f3a089a90aa" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "mini.bufremove": { "branch": "main", "commit": "4cfbb201b2760da79ca6e1a00e9f67cbc99cbb8f" },
   "mini.comment": { "branch": "main", "commit": "4677392f091e8b5c18d4b535130220a6d1da4aca" },
