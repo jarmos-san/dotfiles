@@ -6,7 +6,6 @@ return {
   opts = {
     formatters_by_ft = {
       go = { "goimports-reviser", "golines", "gofmt" },
-      hcl = { "hclfmt" },
       lua = { "stylua" },
       sh = { "shfmt" },
     },
