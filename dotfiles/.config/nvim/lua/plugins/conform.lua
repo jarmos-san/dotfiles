@@ -7,7 +7,6 @@ return {
     formatters_by_ft = {
       go = { "goimports-reviser", "golines", "gofmt" },
       lua = { "stylua" },
-      sh = { "shfmt" },
     },
     format_on_save = function(_)
       return {
@@ -21,17 +20,6 @@ return {
 
     -- Setup "conform.nvim" to work
     conform.setup(opts)
-
-    -- Add proper indents to the formatted Shell files
-    conform.formatters.shfmt = {
-      prepend_args = {
-        "--indent=2",
-        "--binary-next-line",
-        "--case-indent",
-        "--space-redirects",
-        "--keep-padding",
-      },
-    }
 
     -- Format long lines in Go source code
     conform.formatters.golines = {
