@@ -14,7 +14,7 @@ return {
         -- "bash",
         -- "caddy",
         -- "comment",
-        -- "css",
+        "css",
         -- "diff",
         "dockerfile",
         "editorconfig",
