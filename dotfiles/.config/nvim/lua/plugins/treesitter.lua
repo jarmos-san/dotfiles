@@ -47,7 +47,7 @@ return {
         -- "rst",
         "scss",
         "sql",
-        -- "terraform",
+        "terraform",
         -- "tsx",
         -- "toml",
         -- "typescript",
