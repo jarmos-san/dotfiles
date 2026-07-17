@@ -11,7 +11,7 @@
   "mini.pairs": { "branch": "main", "commit": "b1fd9df3bb4a41c8f45778a3859ee80ef6b367e3" },
   "mini.splitjoin": { "branch": "main", "commit": "9301717c7612ccb72e89629df89416585dd54c9b" },
   "mini.starter": { "branch": "main", "commit": "25de4998197d59673f1918968a8f4060195edca0" },
-  "mini.surround": { "branch": "main", "commit": "c30ec60393b256427512c6996a2b37d9cbcbb66a" },
+  "mini.surround": { "branch": "main", "commit": "8d5d0c5aa92449368ac251e85451d79d8f69d296" },
   "neoscroll.nvim": { "branch": "master", "commit": "c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8" },
   "nvim-lint": { "branch": "master", "commit": "a219b2c9e5b4765e5c845aba119dad55806fcaf1" },
   "nvim-notify": { "branch": "master", "commit": "8701bece920b38ea289b457f902e2ad184131a5d" },
