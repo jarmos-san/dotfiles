@@ -5,7 +5,6 @@ return {
   event = { "LspAttach", "BufReadPost", "BufNewFile" },
   opts = {
     formatters_by_ft = {
-      go = { "goimports-reviser", "golines", "gofmt" },
       lua = { "stylua" },
     },
     format_on_save = function(_)
@@ -20,23 +19,5 @@ return {
 
     -- Setup "conform.nvim" to work
     conform.setup(opts)
-
-    -- Format long lines in Go source code
-    conform.formatters.golines = {
-      prepend_args = {
-        "--max-len=88",
-        "--reformat-tags",
-        "--shorten-comments",
-      },
-    }
-
-    -- Format the import statements in Go source code
-    conform.formatters["goimports-reviser"] = {
-      prepend_args = {
-        -- FIXME: It removes "used" statements too!!!!
-        -- "-rm-unused", -- Remove unused imports
-        "-set-alias", -- Create aliases for versioned imports
-      },
-    }
   end,
 }
