@@ -52,7 +52,7 @@ return {
       hcl = "120",
       jsonc = "90",
       vue = "100",
-      ts = "120",
+      typescript = "120",
     },
   },
 }
