@@ -39,6 +39,7 @@ return {
       "tmux",
       "toml",
       "typst",
+      "vue",
     },
     custom_colorcolumn = {
       lua = "120",
@@ -51,7 +52,6 @@ return {
       go = "88",
       hcl = "120",
       jsonc = "90",
-      vue = "100",
       typescript = "120",
     },
   },
