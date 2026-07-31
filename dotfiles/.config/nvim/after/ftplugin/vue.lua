@@ -11,3 +11,8 @@ if vim.api.nvim_buf_line_count(0) >= 100 then
   vim.wo.foldcolumn = "auto" -- Show fold indicators on the left margin
   vim.wo.foldnestmax = 3 -- Maximum depth of folds
 end
+
+-- Add line wraps since TailwindCSS classes can be quite long and illegible otherwise
+vim.o.wrap = true
+vim.o.linebreak = true
+vim.opt.iskeyword:append("-")
