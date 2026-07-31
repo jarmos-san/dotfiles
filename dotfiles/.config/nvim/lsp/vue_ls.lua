@@ -10,7 +10,18 @@
 
 ---@type vim.lsp.Config
 return {
-  cmd = { "vue-language-server", "--stdio" },
+  -- `vue-language-server` requires the JS-based TypeScript API (`ts.server`),
+  -- which TypeScript 7.x (native tsgo) no longer provides. The Homebrew formula
+  -- auto-installs the `typescript: "*"` peer dep as TS 7.0.2, which crashes the
+  -- server on the first `.vue` file:
+  -- `TypeError: Cannot read properties of undefined (reading 'protocol')`.
+  -- Point `--tsdk` at the pinned global TypeScript 6.x install instead (only
+  -- TS <= 6 is supported; see https://github.com/mason-org/mason.nvim/issues/2108).
+  cmd = {
+    "vue-language-server",
+    "--stdio",
+    "--tsdk=" .. vim.fn.expand("~/.local/share/pnpm/global/5/node_modules/typescript/lib"),
+  },
   filetypes = { "vue" },
   root_markers = { "package.json" },
   on_attach = function(client, _)
