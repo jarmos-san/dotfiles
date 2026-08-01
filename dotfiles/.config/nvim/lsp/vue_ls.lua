@@ -24,8 +24,11 @@ return {
   },
   filetypes = { "vue" },
   root_markers = { "package.json" },
-  on_attach = function(client, _)
+  on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
+    if vim.bo[bufnr].filetype == "vue" then
+      client.server_capabilities.semanticTokensProvider = nil
+    end
   end,
   on_init = function(client)
     local retries = 0
