@@ -9,6 +9,7 @@ return {
       "checkhealth",
       "conf",
       "conform-info",
+      "css",
       "dosini",
       "dotenv",
       "fish",
