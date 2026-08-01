@@ -3,7 +3,7 @@
   "instructions": [
     "AGENTS.md"
   ],
-  "default_agent": "plan",
+  "default_agent": "build",
   "share": "disabled",
   "autoupdate": false,
   "formatter": {
@@ -54,6 +54,7 @@
       }
     },
     "plan": { // Configurations for the default "plan" agent
+      "disable": true, // Disable the default "plan" agent
       "permission": {
         "read": "allow" // Allow reading files and contents of folders by default
       }
