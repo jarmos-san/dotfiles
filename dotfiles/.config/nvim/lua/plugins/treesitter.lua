@@ -11,9 +11,9 @@ return {
     config = function()
       local parsers = {
         -- "astro",
-        -- "bash",
-        -- "caddy",
-        -- "comment",
+        "bash",
+        "caddy",
+        "comment",
         "css",
         -- "diff",
         "dockerfile",
