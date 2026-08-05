@@ -29,6 +29,7 @@ return {
         "%.tfstate",
         "%.astro",
         "%.tflint.d",
+        "%.output",
       },
     },
     pickers = {
