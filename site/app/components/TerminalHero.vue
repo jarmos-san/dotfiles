@@ -1,17 +1,14 @@
 <!-- site/components/TerminalHero.vue -->
 <script setup lang="ts">
-withDefaults(
-  defineProps<{
-    prompt?: string
-    command?: string
-    title?: string
-  }>(),
-  {
-    prompt: '❯',
-    command: 'curl -fsSL "https://tinyurl.com/setup-dotfile" | bash -c',
-    title: 'jarmos — zsh: ~/dotfiles',
-  },
-)
+const {
+  prompt = '❯',
+  command = 'curl -fsSL "https://tinyurl.com/setup-dotfile" | bash -c',
+  title = 'jarmos — zsh: ~/dotfiles',
+} = defineProps<{
+  prompt?: string
+  command?: string
+  title?: string
+}>()
 </script>
 
 <template>
