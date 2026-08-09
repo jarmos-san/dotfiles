@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #282828;
+  --color-bg-deep: #1d2021;
+  --color-panel: #3c3836;
+  --color-fg: #ebdbb2;
+  --color-dim: #a89984;
+  --color-green: #b8bb26;
+  --color-orange: #fe8019;
+  --color-blue: #83a598;
+  --color-red: #fb4934;
+  --font-mono: 'Cascadia Code', ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg font-mono text-fg antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-panel);
+    color: var(--color-orange);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer utilities {
+  .cursor-blink {
+    animation: cursor-blink 1.1s steps(1) infinite;
+  }
+
+  @keyframes cursor-blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cursor-blink {
+      animation: none;
+    }
+  }
+}
