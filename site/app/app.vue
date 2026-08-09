@@ -3,12 +3,12 @@
 const siteUrl = 'https://dotfiles.jarmos.dev/'
 
 useSeoMeta({
-  title: 'jarmos/dotfiles — a development environment, versioned',
+  title: 'jarmos/dotfiles — Neovim, Fish, Wezterm & tmux configs',
   description:
     "Jarmos's personal dotfiles: Neovim, Fish, Wezterm, tmux, and the tools around them — tracked in git, ready to install.",
   ogType: 'website',
   ogSiteName: 'jarmos/dotfiles',
-  ogTitle: 'jarmos/dotfiles — a development environment, versioned',
+  ogTitle: 'jarmos/dotfiles — Neovim, Fish, Wezterm & tmux configs',
   ogDescription:
     "Jarmos's personal dotfiles: Neovim, Fish, Wezterm, tmux, and the tools around them — tracked in git, ready to install.",
   ogUrl: siteUrl,

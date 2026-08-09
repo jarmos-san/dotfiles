@@ -40,12 +40,11 @@ const toolGroups = [
   <section class="py-16 sm:py-24">
     <p class="text-sm text-orange" aria-hidden="true">❯ ~/jarmos</p>
     <h1 class="mt-4 max-w-2xl text-4xl leading-tight text-fg sm:text-5xl">
-      A development
-      <span class="text-green">environment</span>, versioned.
+      My <span class="text-green">dotfiles</span>, in git.
     </h1>
     <p class="mt-6 max-w-xl text-base leading-relaxed text-dim">
-      Neovim, Fish, Wezterm, tmux — and the tools around them, kept in git and
-      ready to install.
+      Neovim, Fish, Wezterm, tmux — the tools I code with every day, ready to
+      install.
     </p>
 
     <div class="mt-10 max-w-2xl">

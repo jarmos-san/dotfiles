@@ -3,7 +3,7 @@
 const {
     prompt = "❯ ",
     command = 'curl -fsSL "https://tinyurl.com/setup-dotfile" | bash -c',
-    title = "jarmos — zsh: ~/dotfiles",
+    title = "jarmos — fish: ~/dotfiles",
 } = defineProps<{
     prompt?: string;
     command?: string;
@@ -25,7 +25,7 @@ const {
         </div>
 
         <div class="flex items-start justify-between gap-4 px-4 py-5 sm:px-5">
-            <p class="min-w-0 break-words text-sm leading-relaxed text-fg sm:text-base">
+            <p class="min-w-0 wrap-break-word text-sm leading-relaxed text-fg sm:text-base">
                 <span class="select-none text-green" aria-hidden="true">{{ prompt }} </span>
                 <span class="text-dim">curl</span>
                 <span class="text-dim"> -fsSL </span>
