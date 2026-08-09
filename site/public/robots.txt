@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dotfiles.jarmos.dev/sitemap.xml
