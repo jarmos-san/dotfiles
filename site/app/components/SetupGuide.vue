@@ -1,17 +1,15 @@
 <!-- site/components/SetupGuide.vue -->
 <script setup lang="ts">
-withDefaults(
+const { command = 'curl -fsSL "https://tinyurl.com/setup-dotfile" | bash -c' } =
   defineProps<{
     command?: string
-  }>(),
-  {
-    command: 'curl -fsSL "https://tinyurl.com/setup-dotfile" | bash -c',
-  },
-)
+  }>()
+
+const setupId = useId()
 </script>
 
 <template>
-  <div id="setup" class="scroll-mt-8">
+  <div :id="setupId" class="scroll-mt-8">
     <div class="flex items-center justify-between gap-4 rounded-lg border border-panel bg-bg-deep px-4 py-3 sm:px-5">
       <p class="min-w-0 break-words text-sm text-fg">
         <span class="select-none text-green" aria-hidden="true">$ </span>
