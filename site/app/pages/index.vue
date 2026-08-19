@@ -47,7 +47,7 @@ const toolGroups = [
       install.
     </p>
 
-    <div class="mt-10 max-w-2xl">
+    <div class="mt-10 lg:w-fit">
       <TerminalHero />
     </div>
   </section>
