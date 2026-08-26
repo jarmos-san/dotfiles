@@ -37,6 +37,7 @@ return {
       "terraform",
       "text",
       "Trouble",
+      "template",
       "tmux",
       "toml",
       "typst",
