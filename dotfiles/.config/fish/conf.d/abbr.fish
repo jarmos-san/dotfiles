@@ -62,3 +62,6 @@ abbr --add glow "glow --style ~/.config/glow/styles/gruvbox-dark.json"
 
 # OpenCode abbreviations
 abbr --add oc opencode
+
+# Unix commands
+abbr --add date date --iso-8601 seconds
