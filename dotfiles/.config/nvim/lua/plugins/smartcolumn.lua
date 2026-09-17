@@ -18,6 +18,7 @@ return {
       "gitconfig",
       "gitignore",
       "gitrebase",
+      "go",
       "gosum",
       "gomod",
       "help",
