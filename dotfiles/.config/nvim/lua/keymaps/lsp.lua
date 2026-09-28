@@ -78,6 +78,18 @@ local keymaps = {
     rhs = vim.lsp.buf.list_workspace_folders,
     opts = { desc = "List workspace folders" },
   },
+  {
+    mode = "n",
+    lhs = "<leader>h",
+    rhs = function()
+      if vim.lsp.inlay_hint then
+        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+      else
+        vim.lsp.buf.inlay_hint()
+      end
+    end,
+    opts = { desc = "Toggle LSP inlay hints on/off." },
+  },
 }
 
 for _, map in ipairs(keymaps) do
