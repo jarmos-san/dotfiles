@@ -22,6 +22,7 @@ return {
       "gosum",
       "gomod",
       "help",
+      "html",
       "json",
       "jsonc",
       "markdown",
