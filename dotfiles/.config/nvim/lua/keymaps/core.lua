@@ -163,6 +163,30 @@ local keymaps = {
     rhs = bdelete,
     opts = { desc = "Delete the buffer contents from the Neovim session" },
   },
+  {
+    mode = "c",
+    lhs = "<C-H>",
+    rhs = "<Home>",
+    opts = { desc = "cmdline: move to the beginning" },
+  },
+  {
+    mode = "c",
+    lhs = "<C-K>",
+    rhs = "<Right>",
+    opts = { desc = "cmdline: move to the beginning" },
+  },
+  {
+    mode = "c",
+    lhs = "<C-J>",
+    rhs = "<Left>",
+    opts = { desc = "cmdline: move to the beginning" },
+  },
+  {
+    mode = "c",
+    lhs = "<C-L>",
+    rhs = "<End>",
+    opts = { desc = "cmdline: move to the beginning" },
+  },
 }
 
 for _, map in ipairs(keymaps) do
