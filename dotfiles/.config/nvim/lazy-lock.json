@@ -15,10 +15,10 @@
   "neoscroll.nvim": { "branch": "master", "commit": "c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8" },
   "nvim-lint": { "branch": "master", "commit": "52107ce2076a27a285af781248e2c59bad817cd0" },
   "nvim-notify": { "branch": "master", "commit": "8701bece920b38ea289b457f902e2ad184131a5d" },
-  "nvim-treesitter": { "branch": "main", "commit": "0195cd62fa89950f34c0e0d648ea7897ab85d4d3" },
+  "nvim-treesitter": { "branch": "main", "commit": "610734c5d3e59761d5f79318d120633374537fa5" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "6141a40173c6efa98242dc951ed4b6f892c97027" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
-  "schemastore.nvim": { "branch": "main", "commit": "a7a40007c34b784585811dace3b7e1cc16669228" },
+  "schemastore.nvim": { "branch": "main", "commit": "4794bb7a4cf66b894f0029c3094b7936a8c0e8fe" },
   "smartcolumn.nvim": { "branch": "main", "commit": "3a760dc239de71264072f829a184aafcf7d4d3e7" },
   "telescope.nvim": { "branch": "master", "commit": "40aedd8a68c78a656a10a8d62d80c54af59420fb" }
 }
